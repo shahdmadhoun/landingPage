@@ -13,12 +13,16 @@
             </form>
             </div>
         </div>
-        <div class="col-lg-4">
-            <div class="list-group">
-                <a data-toggle="collapse" href="#data" class="list-group-item list-group-item-action bg-warning">
-                  Category
-                </a>
 
+
+        <div class="col-lg-4">
+
+            <div>
+                <button type="button" class="list-group-item list-group-item-action bg-warning" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+                    Category
+                </button>
+            </div>
+              <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
                 <div class="collapse show" id="data">
                     <a href="#" class="list-group-item list-group-item-action">HTML</a>
                     <a href="#" class="list-group-item list-group-item-action">CSS</a>
@@ -26,7 +30,13 @@
                     <a href="#" class="list-group-item list-group-item-action">Angular</a>
                     <a href="#" class="list-group-item list-group-item-action">Node JS</a>    
                 </div>
-            </div>
+              </div>
+
+            <!-- <div class="list-group">
+                <a data-toggle="collapse" href="#data" class="list-group-item list-group-item-action bg-warning">
+                  Category
+                </a>
+            </div> -->
         </div>
 
       </div>
