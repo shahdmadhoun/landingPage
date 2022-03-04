@@ -8,6 +8,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LoadComponent } from './load/load.component';
 import { CardsComponent } from './cards/cards.component';
 import { SliderComponent } from './slider/slider.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { SliderComponent } from './slider/slider.component';
     NavbarComponent,
     LoadComponent,
     CardsComponent,
-    SliderComponent
+    SliderComponent,
+    ContactUsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
